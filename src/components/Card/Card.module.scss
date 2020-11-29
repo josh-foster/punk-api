@@ -1,17 +1,38 @@
-article {
-   height: 100%;
-   width: 100%;
-   border: 4px solid black;
+.card{
 
-    img {
-        height: 50%;
-        
-      }
 
-      .beerInfo{
-        height: 50%;
-        width: 100%;
-        background-color: blue;
-      }
+  height: 400px;
+  background-color:white;
+  padding: 1px;
+  border-radius: 15%;
+  
+
+  h2{
+    width: 100%;
+    text-align: center;
+  }
+  p{
+      
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
     
+   section{
+    
+     width: 100%;
+     height: 70%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    img{
+      height: 90%;
+     
+    }
+   }
+   
+    
+   
+  
+ 
 }

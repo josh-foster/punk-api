@@ -7,16 +7,30 @@ const {
   name,
   image_url,
   tagline,
+  
 } = props.beer
+
+const shortenName = (name) =>
+    name.length < 20
+      ? name
+      : name.substring(0, 15) + "...";
+
+const shortenTagline = (tagline) =>
+    tagline.length < 30
+      ? tagline
+      : tagline.substring(0, 15) + "...";
 
   return (
     <>
       <article className={styles.card}>
-        <img className={styles.img} src={image_url} alt=""/>
-        <section className={styles.beerInfo}>
-          <h2>{name}</h2>
-          <p>{tagline}</p> 
+        <h2>{shortenName(name)}</h2>
+        <p>{shortenTagline(tagline)}</p>
+        <section>
+          <img className={styles.img} src={image_url} alt=""/>
         </section>
+          
+         
+           
         
       </article>
     </>

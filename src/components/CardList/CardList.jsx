@@ -14,12 +14,11 @@ const CardList = () => {
   );
 
   return (
-    <>
+    
     <section className={styles.cards}>
       {beers.map(getBeerJsx)}
     </section>
-     
-    </>
+      
   );
 };
 

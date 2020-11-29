@@ -5,9 +5,9 @@ import CardList from "../CardList";
 const Main = () => {
 
   return (
-    <>
+    <main> 
       <CardList />
-    </>
+    </main> 
   );
 };
 
