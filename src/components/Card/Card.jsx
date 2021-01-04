@@ -5,8 +5,9 @@ const Card = (props) => {
 
 const {
   name,
-  image_url,
+  img,
   tagline,
+  abv
   
 } = props.beer
 
@@ -26,12 +27,9 @@ const shortenTagline = (tagline) =>
         <h2>{shortenName(name)}</h2>
         <p>{shortenTagline(tagline)}</p>
         <section>
-          <img className={styles.img} src={image_url} alt=""/>
+          <img className={styles.img} src={img} alt=""/>
         </section>
-          
-         
-           
-        
+        <p>{abv}%</p>
       </article>
     </>
   );

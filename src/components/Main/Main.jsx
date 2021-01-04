@@ -2,12 +2,13 @@ import React from "react";
 import styles from "./Main.module.scss";
 import CardList from "../CardList";
 
-const Main = () => {
+const Main = (props) => {
 
+  const {beers} = props
   return (
-    <main> 
-      <CardList />
-    </main> 
+    <section className={styles.allCards}> 
+      <CardList beers={beers} />
+    </section> 
   );
 };
 

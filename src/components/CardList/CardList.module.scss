@@ -1,9 +1,19 @@
-.cards {
- 
-  display: grid;
-  row-gap: 2%;
-  grid-template-columns: repeat(auto-fill, 275px);
-  justify-content: space-between;
-   
-}
 
+
+  .cards {
+    width: 95vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 275px);
+    grid-gap: 50px;
+    justify-content: space-around;
+    margin: 20px auto;
+    min-height: 100%;
+    
+  
+    .card {
+      margin: auto;
+      height: 400px;
+      width: 275px;
+    }
+  }
+  

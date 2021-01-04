@@ -1,2 +1,62 @@
+.title{
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    font-size: 3vw;
+    width: 20vw;
+    
+    
+}
+
+.filters{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    .abvFilter{
+        
+        height: 100%;
+        width:900px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .search{
+        
+        height: 100%;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 3%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .title{
+        font-size: 5vw 
+    }
+    .filters{
+        
+        .search{
+            
+            width: 700px;
+        }
+    }
+}
+@media only screen and (max-width: 375px) {
+    .filters{
+        
+        .search{
+            
+            width: 1200px;
+        }
+    }
+ }
+
+
+
 
 

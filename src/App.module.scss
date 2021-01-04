@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0%;
+    
+}
+
+body{
+    height: calc(100vh - 75px);
+    max-width:100%;
+    background-image: url(./background-image-main.jpg);
+
+    .nav {
+        height: 75px;
+        background-color: white;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .content {
+        max-width: 95%;
+        margin: auto;
+        padding-right: 2%;
+        height: auto;    
+    }
+}
+
+
+

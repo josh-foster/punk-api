@@ -1,11 +1,28 @@
 import React from "react";
 import styles from "./SearchBox.module.scss";
 
-const SearchBox = () => {
+const SearchBox = (props) => {
+
+  const {grabBeersBySearch, activateSearch} = props
+
+  const handleChange = (e) => {
+    activateSearch(e.target.value);
+    grabBeersBySearch(e.target.value);
+  }
+
+  const handleBlur = (e) => {
+    e.target.value = ``
+    activateSearch(``);
+    grabBeersBySearch(``);
+  }
   return (
-    <>
-      <p>SearchBox works</p>
-    </>
+      
+      <input 
+      onBlur={handleBlur}
+      onChange={handleChange}
+      type="text"
+      placeholder="Search Beers..." />
+    
   );
 };
 
