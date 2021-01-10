@@ -1,6 +1,4 @@
 import React, { useState ,useEffect } from "react";
-import logo from './logo.svg';
-// import image_url from `./background-image-main.jpg`
 import styles from "./App.module.scss";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
@@ -8,8 +6,7 @@ import Navbar from "./components/Navbar";
 function App() {
 
   const [beers, setBeers] = useState([]);
- 
-console.log(logo)
+
 
 
   const cleanBeerData = (beer) => {
@@ -38,15 +35,15 @@ console.log(logo)
     .then((res) => res.json())
     .then((res) => {
       const cleanedBeers = res.map(cleanBeerData);
-      setBeers(cleanedBeers);
+      const removedNoImgBeers = cleanedBeers.filter((beer) => {
+        return beer.img !== null;
+      }) 
+      setBeers(removedNoImgBeers);
     })
     .catch((error) => {
       console.log(error);
     })
   }
-  useEffect(() => {
-    grabBeers();
-  }, [])
 
 
   
@@ -69,6 +66,11 @@ console.log(logo)
       console.log(error);
     })
   }
+
+  useEffect(() => {
+    grabBeers();
+  }, [])
+
   useEffect(() => { 
     filterBeers();   
   }, []);

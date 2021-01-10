@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./CardList.module.scss";
 import Card from "../Card";
-import beers from "../../beers";
+
 
 const CardList = (props) => {
 
