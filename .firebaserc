@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "punk-api-3ddda"
+    "default": "brewdog-api-290e8",
+    "punk-api": "punk-api-3ddda"
   }
 }
