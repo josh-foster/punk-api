@@ -11,21 +11,19 @@ const Navbar = (props) => {
       <section className={styles.title}>
         <h1>brewdog</h1>
       </section>
-
-      <section className={styles.filters}>
-        <div className={styles.abvFilter}>
-          <FilterList
-            activateFilter={activateFilter}
-            filterBeers={filterBeers}
-          />
-        </div>
-        <div className={styles.search}>
-          <SearchBox
-            activateSearch={activateSearch}
-            grabBeersBySearch={grabBeersBySearch}
-          />
-        </div>
+      <section className={styles.abvFilter}>
+        <FilterList
+          activateFilter={activateFilter}
+          filterBeers={filterBeers}
+        />
       </section>
+      <section className={styles.search}>
+        <SearchBox
+          activateSearch={activateSearch}
+          grabBeersBySearch={grabBeersBySearch}
+        />
+      </section>
+      
     </>
   );
 };

@@ -5,56 +5,39 @@
     font-size: 3vw;
     width: 20vw;
     
-    
+
 }
 
-.filters{
-    width: 80vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-
     .abvFilter{
-        
+
         height: 100%;
-        width:900px;
+        width:80vw;
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
-    
+
     .search{
         
         height: 100%;
-        width: 200px;
+        width: 20vw;
         display: flex;
         align-items: center;
         justify-content: flex-end;
         margin-right: 3%;
     }
-}
+
 @media only screen and (max-width: 425px) {
     .title{
-        font-size: 5vw 
+        font-size: 5vw
     }
-    .filters{
-        
         .search{
-            
-            width: 700px;
+
+            width: 70vw;
         }
-    }
+    
 }
-@media only screen and (max-width: 375px) {
-    .filters{
-        
-        .search{
-            
-            width: 1200px;
-        }
-    }
- }
+
 
 
 
